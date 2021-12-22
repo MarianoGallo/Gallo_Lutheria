@@ -225,6 +225,10 @@ main h2{
     grid-area: img12;
     background-size: cover;
 }
+.juver:hover{
+    transform: rotate(2deg) scale(1.2);
+    transition: 0.3s;
+}
 .insumos{
     /*background-color: blue;*/
     display: flex;
