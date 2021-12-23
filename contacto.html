@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="styleLutheria.css">
     <title>Escuela de Lutheria</title> 
 </head>
 <body>
     <header>
-        <div class="logotipo">
+        <!--div class="logotipo">
             <img src="imagenes/logo.png" alt="logo" class="imgLogo">
         </div>
         <nav class="barraNav">
@@ -21,13 +22,44 @@
                 <li class="itemBarraNav resalte"><a href="contacto.html" class="resalte">CONTACTO</a></li>
                 <li class="itemBarraNav resalte"><a href="novedades.html" class="resalte">NOVEDADES</a></li>
             </ul>   
-        </nav>
+        </nav-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark .text-light">
+          <a class="navbar-brand" href="#"><img src="imagenes/logo.png" alt="" width="100px"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">INICIO<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">GALERIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="insumos.html">INSUMOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="novedades.html">NOVEDADES</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              ESCUELA DE LUTHERIA CORDOBA
+            </span>
+          </div>
+        </nav>  
     </header>
     <main>
         <main>
-            <img src="imagenes/mainFondo.jpg" class="fondoMain" alt="fondo">
+            <img src="imagenes/main.jpg" class="fondoMain" alt="fondo">
         <section class="principal">
-            <form action="formulario" class="formulario">
+            <!--form action="formulario" class="formulario">
                 <label for="nombre y apellido" class="etiqueta">Nombre y apellido</label>
                 <input type="text" name="Nombre y Apellido">
                 <br>
@@ -67,8 +99,80 @@
                 <textarea name="consulta" id="consulta" cols="50" rows="10" placeholder="Ingrese su consulta"></textarea>
                 <br>
                 <input type="submit" name="enviar" id="send">
-                
-            </form>
+            </form-->
+            <!--formulario anterior-->
+            <form>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="validationTooltip01">Nombre</label>
+                      <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationTooltip02">Apellido</label>
+                      <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <div class="form-group">
+                        <label for="exampleInputCel">Celular</label>
+                        <input type="text" class="form-control" id="exampleInputCel" aria-describedby="cellHelp">
+                        
+                    <fieldset class="form-group row">
+                        <legend class="col-form-label col-sm-4 float-sm-left pt-0">Sexo</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">Femenino</label>
+                                </div>
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">Masculino</label>
+                            </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                        <legend class="col-form-label col-sm-4 float-sm-left pt-0">Temática</legend>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Construcción
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Reparación
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Acústicos
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Eléctricos
+                                </label>
+                              </div>       
+                    </fieldset>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Ingrese su consulta</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                              
+              </form>
         </section>
     </main>
     <footer>
@@ -82,5 +186,8 @@
             <a href="https://www.youtube.com/results?search_query=escuela+de+lutheria+cordoba"><img src="imagenes/yout.PNG" alt="youtube" width="50px"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>

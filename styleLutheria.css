@@ -13,14 +13,14 @@ body{
     justify-content: space-around;
 }
 
-header{
+/*header{
     background-color: rgb(26, 26, 26);
     width: 100vw;
-    /*height: 25vh;*/
+    /*height: 25vh;
     display: grid; 
     grid-template-columns: 20% 80%;
     align-items: center;
-}
+}*/
 .logotipo{
     background-image: radial-gradient(rgb(185, 185, 185) 5%, darkred 60%, rgb(26, 26, 26));
     /*margin: 5px;*/
@@ -116,6 +116,10 @@ main .fondoMain{
 .videoInstitucional iframe{
     width: 90%;
     /*height: 100%;*/
+}
+.nosotros{
+    display: flex;
+
 }
 main h2{
     background-color: rgb(26, 26, 26);
