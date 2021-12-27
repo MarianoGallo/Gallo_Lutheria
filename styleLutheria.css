@@ -13,14 +13,14 @@ body{
     justify-content: space-around;
 }
 
-/*header{
+header{
     background-color: rgb(26, 26, 26);
     width: 100vw;
-    /*height: 25vh;
+    /*height: 25vh;*/
     display: grid; 
     grid-template-columns: 20% 80%;
     align-items: center;
-}*/
+}
 .logotipo{
     background-image: radial-gradient(rgb(185, 185, 185) 5%, darkred 60%, rgb(26, 26, 26));
     /*margin: 5px;*/
@@ -71,7 +71,6 @@ body{
 }
 main{
     /*background-color: yellowgreen;*/
-    /*height: 80vh;*/
     display: flex; 
     flex-direction: column;
     justify-content: space-around;
@@ -115,11 +114,6 @@ main .fondoMain{
 }
 .videoInstitucional iframe{
     width: 90%;
-    /*height: 100%;*/
-}
-.nosotros{
-    display: flex;
-
 }
 main h2{
     background-color: rgb(26, 26, 26);
@@ -148,11 +142,20 @@ main h2{
     padding: 5px;
 }
 .alumno img{
-    /*width: 80%;|
+    /*width: 80%;
     height: 80%;*/
     border: solid rgb(26, 26, 26) 1px;
     border-radius: 50%;
 }
+.nosotros{
+    /*background-color: blueviolet;*/
+    display: flex;
+    justify-content: space-evenly;
+}
+.ubicacion iframe{
+    width: 100%;
+}
+
 .galeria{
     /*background-color: rgb(1, 47, 63);*/
     width: 100vw;
@@ -185,12 +188,12 @@ main h2{
 }
 .img4{
     grid-area: img4;
-    background-image: url(imagenes/15.jpg);
+    background-image: url(imagenes/12.jpg);
     background-size: cover;
 }
 .img5{
     grid-area: img5;
-    background-image: url(imagenes/12.jpg);
+    background-image: url(imagenes/26.jpg);
     background-size: cover;
 
 }
@@ -200,7 +203,7 @@ main h2{
     background-size: cover;   
 }
 .img7{
-    background-image: url(imagenes/26.jpg);
+    background-image: url(imagenes/15.jpg);
     grid-area: img7;
     background-size: cover;
 }
@@ -210,7 +213,7 @@ main h2{
     background-size: cover;
 }
 .img9{
-    background-image: url(imagenes/05.jpg);
+    background-image: url(imagenes/19.jpg);
     grid-area: img9;
     background-size: cover;
 }
@@ -262,7 +265,10 @@ main h2{
 .insumoImg{
     width: 80px;
 }
-
+.novedades{
+    display: flex;
+    justify-content: space-around;
+}
 footer{
     background-color: darkred;
     width: 100vw;
@@ -283,11 +289,8 @@ footer{
     header{
         /*background-color: blueviolet;*/
         width: 100vw;
-        /*height: 40vh;*/
         display: flex;
         flex-direction: column;
-        /*display: grid;
-        grid-template-rows: 50% 50%;*/
         align-items: center;    
     }
     .imgLogo{
@@ -312,7 +315,6 @@ footer{
     .itemBarraNav{
         /*background-color: cornflowerblue;*/
         padding: 5px; 
-        /*margin: 5px;*/
         font-size: x-large;
         
     }
@@ -325,6 +327,14 @@ footer{
         font-size: large;
         color: honeydew;
         border-radius: 5px;
+    }
+    .nosotros{
+        /*background-color: blueviolet;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
     }
     .galeria{
         /*background-color: rgb(1, 47, 63);*/
@@ -352,12 +362,11 @@ footer{
         gap: 10px;
         }
     }
+    
     @media only screen and (max-width: 480px){
         header{
             /*background-color: cornflowerblue;*/
             width: 100vw;
-            /*display: grid;
-            grid-template-columns: 50% 50%;*/
             display: flex;
             flex-direction: column;
         }
@@ -390,8 +399,6 @@ footer{
             /*background-color: dodgerblue;*/
             height: 100%;
             margin: 5px;
-            /*display: grid;
-            grid-template-rows: 50% 50%;*/
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -400,13 +407,18 @@ footer{
         }
         .alumno{
             /*background-color: cadetblue;*/
-            /*display: grid;
-            grid-template-columns: 40% 60%;*/
             display: flex;
             flex-direction: column;
             justify-items: center;
             align-items: center;
         }
+        .nosotros{
+            /*background-color: blueviolet;*/
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        
         .galeria{
             /*background-color: rgb(1, 47, 63);*/
             width: 100vw;
@@ -433,6 +445,10 @@ footer{
             justify-content: space-around;
             align-items: center;
             gap: 10px;
-            }
-
+        }
+        .novedades{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
     }
