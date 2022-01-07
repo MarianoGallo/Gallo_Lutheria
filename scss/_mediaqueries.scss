@@ -1,11 +1,10 @@
-
 @media only screen and (max-width: 768px){
     header{
-        //background-color: blueviolet;
+        /*background-color: blueviolet;*/
         width: 100vw;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;    
     }
     .imgLogo{
         width: 50%;
@@ -17,7 +16,9 @@
         width: 100vw    
     }  
     .listaBarraNav{
-        //background-color: aquamarine;
+        /*background-color: aquamarine;*/
+        /*margin: 5px;*/
+        /*height: 20vh;*/
         display: grid;
         grid-template-columns: 30% 30% 30%;
         column-gap: 5px;
@@ -25,38 +26,142 @@
         align-items: center;
     }
     .itemBarraNav{
-        //background-color: cornflowerblue;
+        /*background-color: cornflowerblue;*/
         padding: 5px; 
         font-size: x-large;
+        
     }
-}
-@media only screen and (max-width: 480px){
-    header{
-        //background-color: cornflowerblue;
-        width: 100vw;
+    .textoInstitucional{
+        background-color: darkred;
+        width: 80%;
+        margin: 5px;
+        padding: 5px;
+        font-family: 'Loved by the King', cursive;
+        font-size: large;
+        color: honeydew;
+        border-radius: 5px;
+    }
+    .nosotros{
+        /*background-color: blueviolet;*/
         display: flex;
         flex-direction: column;
-    }
-    .imgLogo{
-        width: 50%;
-        height: 50%;
-    }
-    .barraNav{
-        background-color: rgb(26, 26, 26);
-        width: 100vw    
-    }
-    .listaBarraNav{
-        //background-color: aquamarine;
-        display: grid;
-        grid-template-columns: 45% 45%;
-        column-gap: 3px;
-        justify-content: space-evenly;   
+        justify-content: space-evenly;
+        align-content: center;
         align-items: center;
     }
-    .itemBarraNav{
-        //background-color: cornflowerblue;
-        padding: 3px; 
-        font-size: large;
-        text-align: center;
+    .galeria{
+        /*background-color: rgb(1, 47, 63);*/
+        width: 100vw;
+        height: 200vh;
+        display: grid;
+        gap: 5px;
+        grid-template-areas: 
+        "img1 img2 img3"
+        "img1 img4 img5"
+        "img6 img7 img7"
+        "img8 img9 img9"
+        "img10 img10 img11" 
+        "img12 img12 img11"
+        ;
     }
-}
+    .productos{
+        /*background-color: blueviolet;*/
+        /*margin: 5px;*/
+        width: 50%;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px){
+        header{
+            /*background-color: cornflowerblue;*/
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+        .imgLogo{
+            width: 50%;
+            height: 50%;
+        }
+        .barraNav{
+            background-color: rgb(26, 26, 26);
+            width: 100vw    
+        }
+        .listaBarraNav{
+            /*background-color: aquamarine;*/
+            /*margin: 5px;*/
+            /*height: 20vh;*/
+            display: grid;
+            grid-template-columns: 45% 45%;
+            column-gap: 3px;
+            justify-content: space-evenly;   
+            align-items: center;
+        }
+        .itemBarraNav{
+            /*background-color: cornflowerblue;*/
+            padding: 3px; 
+            /*margin: 5px;*/
+            font-size: large;
+            text-align: center;
+        }
+        .institucional{
+            /*background-color: dodgerblue;*/
+            height: 100%;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .alumno{
+            /*background-color: cadetblue;*/
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+        .nosotros{
+            /*background-color: blueviolet;*/
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        
+        .galeria{
+            /*background-color: rgb(1, 47, 63);*/
+            width: 100vw;
+            height: 200vh;
+            display: grid;
+            gap: 5px;
+            grid-template-areas: 
+            "img1 img2"
+            "img3 img4"
+            "img3 img4"
+            "img5 img6"
+            "img7 img7"
+            "img8 img9 "
+            "img10 img9" 
+            "img11 img12"
+            ;
+        }
+        .productos{
+            /*background-color: blueviolet;*/
+            /*margin: 5px;*/
+            width: 20%;
+            display: grid;
+            grid-template-columns: 100%;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+        }
+        .novedades{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
