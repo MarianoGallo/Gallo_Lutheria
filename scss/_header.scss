@@ -1,6 +1,6 @@
 header{
     background-color: rgb(26, 26, 26);
-    width: 100vw;
+    width: 100%;
     display: grid; 
     grid-template-columns: 20% 80%;
     align-items: center;
@@ -14,7 +14,6 @@ header{
             height: 65%;
         }
     }
-
     & .barraNav{
         background-color: rgb(26, 26, 26);  
         & .listaBarraNav{

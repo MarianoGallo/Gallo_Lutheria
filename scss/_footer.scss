@@ -1,0 +1,42 @@
+
+footer{
+    background-color: #040303;
+    width: 100%;
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.datosDiseñador p{
+    font-family: 'Amatic SC', Impact, sans-serif; 
+    font-size:medium; 
+    color: honeydew;
+    text-align: center;
+}
+
+@mixin iconos ($width, $height, $color){
+    width: $width;
+    height: $height;  
+    background-color: $color;
+
+}
+.fab{
+    @include iconos(50px, 50px, honeydew);
+}
+
+$redes: (
+    fa-facebook: blue,
+    fa-instagram: rgb(226, 43, 202),
+    fa-twitter:  rgb(64, 192, 235),
+    fa-youtube: red
+);
+@each $redes, $colores in $redes {
+    .fa-#{$redes}{
+        color: $colores;
+        font-size: 50px;
+        text-align: center;
+    }    
+}
+
+
+

@@ -1,36 +1,39 @@
 @media only screen and (max-width: 768px){
+//HEADER
     header{
         /*background-color: blueviolet;*/
         width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;    
-    }
-    .imgLogo{
-        width: 50%;
-        height: 50%;
-    }
-    .barraNav{
+        & .logotipo{
+            & .imgLogo{
+            width: 50%;
+            height: 50%;
+            }
+        }
+        & .barraNav{
         margin: 5px;
         background-color: rgb(26, 26, 26);
-        width: 100vw    
-    }  
-    .listaBarraNav{
-        /*background-color: aquamarine;*/
-        /*margin: 5px;*/
-        /*height: 20vh;*/
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        column-gap: 5px;
-        justify-content: space-evenly;   
-        align-items: center;
+        width: 100vw;  
+            & .listaBarraNav{
+            /*background-color: aquamarine;*/
+            /*margin: 5px;*/
+            /*height: 20vh;*/
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            column-gap: 5px;
+            justify-content: space-evenly;   
+            align-items: center;
+                & .itemBarraNav{
+                    /*background-color: cornflowerblue;*/
+                    padding: 5px; 
+                    font-size: x-large;
+                }
+            }
+        }
     }
-    .itemBarraNav{
-        /*background-color: cornflowerblue;*/
-        padding: 5px; 
-        font-size: x-large;
-        
-    }
+//MAIN
     .textoInstitucional{
         background-color: darkred;
         width: 80%;
@@ -75,39 +78,40 @@
         gap: 10px;
         }
     }
-    
-    @media only screen and (max-width: 480px){
-        header{
-            /*background-color: cornflowerblue;*/
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
+
+@media only screen and (max-width: 480px){
+//HEADER
+    header{
+        /*background-color: cornflowerblue;*/
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        & .logotipo{
+            &.imgLogo{
+                width: 50%;
+                height: 50%;
+            }
         }
-        .imgLogo{
-            width: 50%;
-            height: 50%;
-        }
-        .barraNav{
+        & .barraNav{
             background-color: rgb(26, 26, 26);
-            width: 100vw    
-        }
-        .listaBarraNav{
-            /*background-color: aquamarine;*/
-            /*margin: 5px;*/
-            /*height: 20vh;*/
-            display: grid;
-            grid-template-columns: 45% 45%;
-            column-gap: 3px;
-            justify-content: space-evenly;   
-            align-items: center;
-        }
-        .itemBarraNav{
-            /*background-color: cornflowerblue;*/
-            padding: 3px; 
-            /*margin: 5px;*/
-            font-size: large;
-            text-align: center;
-        }
+            width: 100vw;    
+            & .listaBarraNav{
+                display: grid;
+                grid-template-columns: 45% 45%;
+                column-gap: 3px;
+                justify-content: space-evenly;   
+                align-items: center;
+                & .itemBarraNav{
+                    /*background-color: cornflowerblue;*/
+                    padding: 3px; 
+                    /*margin: 5px;*/
+                    font-size: large;
+                    text-align: center;
+                }
+            }
+        }    
+    }
+//MAIN
         .institucional{
             /*background-color: dodgerblue;*/
             height: 100%;
