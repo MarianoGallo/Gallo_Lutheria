@@ -142,6 +142,9 @@ main .fondoMain {
   font-size: x-large;
   color: honeydew;
   border-radius: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .texto--institucional {
@@ -368,6 +371,10 @@ main h2 {
   width: 80px;
 }
 
+.btn-primary {
+  background-color: #950101;
+}
+
 .novedades {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -448,32 +455,33 @@ footer {
 }
 
 .fab {
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   background-color: honeydew;
+  border-radius: 2px;
 }
 
 .fa-fa-facebook {
   color: blue;
-  font-size: 50px;
+  font-size: 20px;
   text-align: center;
 }
 
 .fa-fa-instagram {
   color: #e22bca;
-  font-size: 50px;
+  font-size: 20px;
   text-align: center;
 }
 
 .fa-fa-twitter {
   color: #40c0eb;
-  font-size: 50px;
+  font-size: 20px;
   text-align: center;
 }
 
 .fa-fa-youtube {
   color: red;
-  font-size: 50px;
+  font-size: 20px;
   text-align: center;
 }
 

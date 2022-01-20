@@ -14,14 +14,16 @@ footer{
     text-align: center;
 }
 
-@mixin iconos ($width, $height, $color){
+@mixin iconos ($width, $height, $color, $radio){
     width: $width;
     height: $height;  
     background-color: $color;
+    border-radius: $radio;
+
 
 }
 .fab{
-    @include iconos(50px, 50px, honeydew);
+    @include iconos(20px, 20px, honeydew, 2px);
 }
 
 $redes: (
@@ -33,7 +35,7 @@ $redes: (
 @each $redes, $colores in $redes {
     .fa-#{$redes}{
         color: $colores;
-        font-size: 50px;
+        font-size: 20px;
         text-align: center;
     }    
 }

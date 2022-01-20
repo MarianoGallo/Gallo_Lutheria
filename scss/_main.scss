@@ -41,6 +41,7 @@ $color4: #B3541E;
     font-size: x-large;
     color: honeydew;
     border-radius: 5px;
+    align-items: center;
 }
 .texto--institucional{
     @extend .texto;
@@ -200,11 +201,15 @@ main h2{
     font-size: x-large;
 }*/
 
-
 .insumoImg{
     width: 80px;
 }
 
+//CONTACTO
+.btn-primary{
+    background-color:#950101;
+}
+//NOVEDADES
 .novedades{
     display: flex;
     justify-content: space-around;
