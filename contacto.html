@@ -18,29 +18,27 @@
         </div>
         <nav class="barraNav">
             <ul class="listaBarraNav">
-                <li class="itemBarraNav resalte"><a href="#" class="resalte">HOME</a></li>
+                <li class="itemBarraNav resalte"><a href="index.html" class="resalte">HOME</a></li>
                 <li class="itemBarraNav resalte"><a href="nosotros.html" class="resalte">NOSOTROS</a></li>
                 <li class="itemBarraNav resalte"><a href="galeria.html" class="resalte">GALERIA</a></li>
                 <li class="itemBarraNav resalte"><a href="insumos.html" class="resalte">INSUMOS</a></li>
-                <li class="itemBarraNav resalte"><a href="contacto.html" class="resalte">CONTACTO</a></li>
+                <li class="itemBarraNav resalte"><a href="#" class="resalte">CONTACTO</a></li>
                 <li class="itemBarraNav resalte"><a href="novedades.html" class="resalte">NOVEDADES</a></li>
             </ul>   
         <nav>  
     </header>
     <main>
-        <main>
-            <img src="imagenes/mainFondo.jpg" class="fondoMain" alt="fondo">
-        <section class="principal">
-          <form class="container">
-            
-            <div class="form-row">
-              <div class="col-md-6 mb-3">
-                <label for="validationTooltip01">Nombre</label>
-                <input type="text" class="form-control" id="validationTooltip01" value="Juan" required>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="validationTooltip02">Apellido</label>
-                <input type="text" class="form-control" id="validationTooltip02" value="Perez" required>
+      <img src="imagenes/mainFondo.jpg" class="fondoMain" alt="fondo">
+      <section class="principal">
+        <form class="container">
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationTooltip01">Nombre</label>
+              <input type="text" class="form-control" id="validationTooltip01" value="Juan" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationTooltip02">Apellido</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="Perez" required>
             </div>
             <div class="col-md-6 mb-3">
               <label for="exampleInputEmail1">E-mail</label>
@@ -54,58 +52,48 @@
             </div>
             <fieldset class="form-group row col-lg-6">
               <legend class="col-form-label col-lg-2 float-lg-left pt-0">Sexo</legend>
-                  <div class="col-lg-2">
-                      <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                      <label class="form-check-label" for="gridRadios1">Femenino</label>
-                      </div>
-                      <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                      <label class="form-check-label" for="gridRadios2">Masculino</label>
+                <div class="col-lg-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">Femenino</label>
                   </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">Masculino</label>
+                </div>
             </fieldset>
             <fieldset class="form-group row col-lg-6">
               <legend class="col-form-label col-lg-2 float-lg-left pt-0">Temática</legend>
-              <div class="col-lg-2">
+                <div class="col-lg-2">
                   <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck">
-                      <label class="form-check-label" for="gridCheck">
-                        Construcción
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck">
-                      <label class="form-check-label" for="gridCheck">
-                        Reparación
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck">
-                      <label class="form-check-label" for="gridCheck">
-                        Acústicos
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck">
-                      <label class="form-check-label" for="gridCheck">
-                        Eléctricos
-                      </label>
-                    </div>       
-          </fieldset>  
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Construcción</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Reparación</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Acústicos</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Eléctricos</label>
+                  </div>       
+            </fieldset>  
           </div>
-          
-                    
           <div class="form-group row">
-            <label for="exampleFormControlTextarea1">Ingrese su consulta</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+              <label for="exampleFormControlTextarea1">Ingrese su consulta</label>
+              <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="4"></textarea>
           </div>              
-                        
-          <button type="submit" class="btn btn-primary mb-5">Enviar</button>
-                              
-              </form>
+                          
+            <button type="submit" class="btn btn-primary mb-5">Enviar</button>
+                                
+            </form>
         </section>
     </main>
-    <footer>
+    <footer> 
       <div class="datosDiseñador">
           <p>©copyright 2021 - MAG Diseño Integral - mag.dis.ind@gmail.com - cel: 0351-152349277</p>
       </div>

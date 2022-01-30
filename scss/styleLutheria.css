@@ -32,7 +32,7 @@ header {
 }
 
 header .logotipo {
-  background-image: radial-gradient(#b9b9b9 5%, darkred 60%, #1a1a1a);
+  background-image: radial-gradient(#B3541E 5%, #A13333 60%, #040303);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +47,7 @@ header .logotipo .imgLogo {
 }
 
 header .barraNav {
-  background-color: #1a1a1a;
+  background-color: #040303;
 }
 
 header .barraNav .listaBarraNav {
@@ -86,6 +86,10 @@ header .barraNav .listaBarraNav .itemBarraNav:hover {
   transition: 0.5s;
 }
 
+header .barraNav .listaBarraNav .itemBarraNav:hover .resalte:active {
+  color: #950101;
+}
+
 main {
   /*background-color: yellowgreen;*/
   display: -webkit-box;
@@ -102,6 +106,7 @@ main {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  height: 100%;
 }
 
 main .fondoMain {
@@ -109,7 +114,7 @@ main .fondoMain {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.4;
+  opacity: 0.50;
   position: absolute;
   margin-top: 0;
   margin-left: 0;
@@ -120,6 +125,7 @@ main .fondoMain {
   /*background-color: dodgerblue;*/
   height: 100%;
   margin: 5px;
+  padding: 25px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -137,9 +143,8 @@ main .fondoMain {
 .texto, .texto--institucional, .texto--alumno {
   width: 80%;
   margin: 5px;
-  padding: 5px;
+  padding: 15px;
   font-family: 'Loved by the King', cursive;
-  font-size: x-large;
   color: honeydew;
   border-radius: 5px;
   -webkit-box-align: center;
@@ -149,6 +154,7 @@ main .fondoMain {
 
 .texto--institucional {
   background-color: #461111;
+  font-size: x-large;
 }
 
 .videoInstitucional {
@@ -166,7 +172,7 @@ main .fondoMain {
 }
 
 main h2 {
-  background-color: #1a1a1a;
+  background-color: #040303;
   font-family: 'Amatic SC', Impact, sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -176,24 +182,36 @@ main h2 {
   text-align: center;
 }
 
+.experiencia {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .alumno {
   /*background-color: cadetblue;*/
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   justify-items: center;
+  padding: 10px;
 }
 
 .texto--alumno {
   background-color: #A13333;
+  font-size: large;
 }
 
 .alumno img {
   /*width: 80%;
     height: 80%;*/
-  border: solid #1a1a1a 1px;
   border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 5px #040303;
+          box-shadow: 0px 0px 5px #040303;
 }
 
 .nosotros {
@@ -373,6 +391,15 @@ main h2 {
 
 .btn-primary {
   background-color: #950101;
+  color: #fff;
+  border-color: #950101;
+}
+
+.btn-primary:hover {
+  background-color: #B3541E;
+  border-color: #B3541E;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .novedades {
@@ -531,16 +558,16 @@ footer {
     padding: 5px;
     font-size: x-large;
   }
-  .textoInstitucional {
-    background-color: darkred;
-    width: 80%;
-    margin: 5px;
-    padding: 5px;
-    font-family: 'Loved by the King', cursive;
-    font-size: large;
-    color: honeydew;
-    border-radius: 5px;
-  }
+  /*.institucional{
+        background-color: darkred;
+        width: 10%;
+        margin: 5px;
+        padding: 10px;
+        font-family: 'Loved by the King', cursive;
+        font-size: large;
+        color: honeydew;
+        border-radius: 5px;
+    }*/
   .nosotros {
     /*background-color: blueviolet;*/
     display: -webkit-box;

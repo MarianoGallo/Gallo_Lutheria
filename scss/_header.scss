@@ -6,7 +6,7 @@ header{
     align-items: center;
     & .logotipo{
         //background-color: blueviolet;
-        background-image: radial-gradient(rgb(185, 185, 185) 5%, darkred 60%, rgb(26, 26, 26));
+        background-image: radial-gradient(#B3541E 5%, #A13333 60%, #040303);
         display: flex;
         justify-content: center;
         & .imgLogo{
@@ -15,7 +15,7 @@ header{
         }
     }
     & .barraNav{
-        background-color: rgb(26, 26, 26);  
+        background-color: #040303;  
         & .listaBarraNav{
             //background-color: aquamarine;
             height: 20vh;
@@ -36,11 +36,12 @@ header{
                     text-decoration: none;
                 }
                 &:hover{
-                    //color: darkred;
                     transform: scale(1.5) translateY(2px);
-                    transition: 0.5s;  
-                } 
-                
+                    transition: 0.5s; 
+                    & .resalte:active{
+                    color: #950101;
+                    }
+                }   
             }
         }
     }

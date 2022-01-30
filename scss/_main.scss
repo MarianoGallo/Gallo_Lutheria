@@ -6,12 +6,13 @@ main{
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    height: 100%;
 }
 main .fondoMain{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.4;
+    opacity: 0.50;
     position: absolute;
     margin-top: 0;
     margin-left: 0;
@@ -27,18 +28,18 @@ $color4: #B3541E;
     /*background-color: dodgerblue;*/
     height: 100%;
     margin: 5px;
+    padding: 25px;
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    align-content: center; 
 }
 .texto{
     width: 80%;
     margin: 5px;
-    padding: 5px;
+    padding: 15px;
     font-family: 'Loved by the King', cursive;
-    font-size: x-large;
     color: honeydew;
     border-radius: 5px;
     align-items: center;
@@ -46,6 +47,7 @@ $color4: #B3541E;
 .texto--institucional{
     @extend .texto;
     background-color: $color2;
+    font-size: x-large;   
 }
 
 .videoInstitucional{
@@ -57,7 +59,7 @@ $color4: #B3541E;
     width: 90%;
 }
 main h2{
-    background-color: rgb(26, 26, 26);
+    background-color: $color1;
     font-family: 'Amatic SC', Impact, sans-serif;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -66,23 +68,28 @@ main h2{
     width: 100%;  
     text-align: center;
 }
+.experiencia{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .alumno{
     /*background-color: cadetblue;*/
-    display: grid;
-    grid-template-columns: 40% 60% ;
+    display: flex;
     justify-items: center;
+    padding: 10px;
 }
 .texto--alumno{
     @extend .texto;
     background-color: $color3;
+    font-size: large;
 }
-
-
 .alumno img{
     /*width: 80%;
     height: 80%;*/
-    border: solid rgb(26, 26, 26) 1px;
+    //border: solid rgb(26, 26, 26) 1px;
     border-radius: 50%;
+    box-shadow: 0px 0px 5px $color1;
 }
 //NOSOTROS
 .nosotros{
@@ -208,7 +215,15 @@ main h2{
 //CONTACTO
 .btn-primary{
     background-color:#950101;
+    color: #fff;
+    border-color: #950101;
 }
+.btn-primary:hover{
+    background-color:#B3541E;
+    border-color: #B3541E;
+    transition: 0.5s;
+}
+
 //NOVEDADES
 .novedades{
     display: flex;

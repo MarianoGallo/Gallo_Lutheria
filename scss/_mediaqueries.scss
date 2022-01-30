@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px){
+ @media only screen and (max-width: 768px){
 //HEADER
     header{
         /*background-color: blueviolet;*/
@@ -34,16 +34,16 @@
         }
     }
 //MAIN
-    .textoInstitucional{
+    /*.institucional{
         background-color: darkred;
-        width: 80%;
+        width: 10%;
         margin: 5px;
-        padding: 5px;
+        padding: 10px;
         font-family: 'Loved by the King', cursive;
         font-size: large;
         color: honeydew;
         border-radius: 5px;
-    }
+    }*/
     .nosotros{
         /*background-color: blueviolet;*/
         display: flex;
@@ -112,6 +112,7 @@
         }    
     }
 //MAIN
+        //INDEX
         .institucional{
             /*background-color: dodgerblue;*/
             height: 100%;
@@ -129,13 +130,14 @@
             justify-items: center;
             align-items: center;
         }
+        //NOSOTROS
         .nosotros{
             /*background-color: blueviolet;*/
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
         }
-        
+        //GALERIA
         .galeria{
             /*background-color: rgb(1, 47, 63);*/
             width: 100vw;
